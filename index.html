@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visual Sounds</title>
     <link rel="stylesheet" href="app.css">
-    <script src="paper-full.min.js"></script>
+    <script src="paper-full.js"></script>
     <!-- Define inlined PaperScript associate it with myCanvas -->
     <script type="text/paperscript" canvas="myCanvas">
-        function onKeyDown(event) {
-            new Path.Circle(new Point(100, 100), 10).fillColor = 'orange';
-        }
+        new Path.Circle(new Point(100, 100), 10).fillColor = 'orange';
     </script>
 </head>
 <body>
