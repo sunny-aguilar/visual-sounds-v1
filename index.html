@@ -25,13 +25,13 @@
             },
             c: {
                 color: "yellow",
-                sounds: new Howl({
+                sound: new Howl({
                     src: ['audio/confetti.mp3']
                 })
             },
             d: {
                 color: "red",
-                sounds: new Howl({
+                sound: new Howl({
                     src: ['audio/corona.mp3']
                 })
             }
@@ -46,7 +46,7 @@
                 var point = maxPoint * randomPoint;
                 var newCircle = new Path.Circle(point, 500);
                 newCircle.fillColor = keyData[event.key].color;
-
+                keyData[even.key].sound
                 circles.push(newCircle);
             }
 
