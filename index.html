@@ -6,8 +6,13 @@
     <title>Visual Sounds</title>
     <link rel="stylesheet" href="app.css">
     <script src="paper-full.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.min.js"></script>
     <!-- Define inlined PaperScript associate it with myCanvas -->
     <script type="text/paperscript" canvas="myCanvas">
+        var sound = new Howl({
+            src: ['sound.webm', 'sound.mp3']
+        });
+        
         var circles = [];
 
         function onKeyDown(events) {
@@ -20,7 +25,7 @@
         }
 
 
-
+        // animate the objects
         function onFrame(event) {
             for(var i = 0; i < circles.length; i++) {
                 circles[i].fillColor.hue += 1;
