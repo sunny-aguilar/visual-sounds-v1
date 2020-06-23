@@ -8,6 +8,8 @@
     <script src="paper-full.js"></script>
     <!-- Define inlined PaperScript associate it with myCanvas -->
     <script type="text/paperscript" canvas="myCanvas">
+        var circles = [];
+
         function onKeyDown(events) {
             var maxPoint = new Point(view.size.width, view.size.height);
             var randomPoint = Point.random();
