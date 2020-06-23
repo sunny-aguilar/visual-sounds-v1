@@ -28,21 +28,28 @@
                 sounds: new Howl({
                     src: ['audio/confetti.mp3']
                 })
+            },
+            d: {
+                color: "red",
+                sounds: new Howl({
+                    src: ['audio/corona.mp3']
+                })
             }
         };
 
         var circles = [];
 
         function onKeyDown(events) {
+            if (keyData[event.key]) {
+                var maxPoint = new Point(view.size.width, view.size.height);
+                var randomPoint = Point.random();
+                var point = maxPoint * randomPoint;
+                var newCircle = new Path.Circle(point, 500);
+                newCircle.fillColor = keyData[event.key].color;
 
-            var maxPoint = new Point(view.size.width, view.size.height);
-            var randomPoint = Point.random();
-            var point = maxPoint * randomPoint;
-            var newCircle = new Path.Circle(point, 500);
-            newCircle.fillColor = keyData[event.key].color;
+                circles.push(newCircle);
+            }
 
-
-            circles.push(newCircle);
         }
 
 
