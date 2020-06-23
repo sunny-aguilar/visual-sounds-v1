@@ -9,6 +9,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.min.js"></script>
     <!-- Define inlined PaperScript associate it with myCanvas -->
     <script type="text/paperscript" canvas="myCanvas">
+
+        var keyData = {
+            a: {
+                color: "purple",
+                sounds: new Howl({
+                    src: ['audio/bubbles.mp3']
+                })
+            },
+            b: {
+                color: "purple",
+                sounds: new Howl({
+                    src: ['audio/clay.mp3']
+                })
+            },
+            c: {
+                color: "purple",
+                sounds: new Howl({
+                    src: ['audio/clay.mp3']
+                })
+            }
+        };
+
         var sound = new Howl({
             src: ['audio/bubbles.mp3']
         });
@@ -22,6 +44,9 @@
             var point = maxPoint * randomPoint;
             var newCircle = new Path.Circle(point, 500);
             newCircle.fillColor = 'orange';
+
+            
+
             circles.push(newCircle);
         }
 
