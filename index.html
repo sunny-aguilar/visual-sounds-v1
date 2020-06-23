@@ -8,7 +8,11 @@
     <script src="paper-full.js"></script>
     <!-- Define inlined PaperScript associate it with myCanvas -->
     <script type="text/paperscript" canvas="myCanvas">
-        new Path.Circle(new Point(100, 100), 10).fillColor = 'orange';
+        var maxPoint = new Point(view.size.width, view.size.height);
+        console.log(maxPoint);
+        new Path.Circle(maxPoint, 10).fillColor = 'orange';
+        console.log(view.size.heigth);
+        console.log(view.size.width);
     </script>
 </head>
 <body>
