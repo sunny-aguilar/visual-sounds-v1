@@ -31,14 +31,10 @@
             }
         };
 
-        var sound = new Howl({
-            src: ['audio/bubbles.mp3']
-        });
-
         var circles = [];
 
         function onKeyDown(events) {
-            sound.play();
+            
             var maxPoint = new Point(view.size.width, view.size.height);
             var randomPoint = Point.random();
             var point = maxPoint * randomPoint;
