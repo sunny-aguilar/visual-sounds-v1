@@ -5,7 +5,7 @@
 
 
 
-    console.log();
+    console.log('Testing node');
 
 
 
