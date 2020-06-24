@@ -28,7 +28,7 @@
         response.writeHead(200, {'Content-Type': 'text/plain'});
 
         // Send the response body as "Hello World"
-        response.end('Hello World\n');
+        response.end('<h1>Hello World</h1>\n');
     }).listen(8081);
 
     // Console will print the message
