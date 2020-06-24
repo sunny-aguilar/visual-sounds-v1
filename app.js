@@ -16,7 +16,7 @@
     console.log(message);
 
     let total = () => 5 + 5;
-    
+    console.log(total);
 
 
 
