@@ -12,7 +12,7 @@
     console.log(z);
     console.log('Sweet!');
 
-
+    let message = 'Hello World!';
 
 
 }());
