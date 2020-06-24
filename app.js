@@ -15,7 +15,7 @@
     let message = 'Hello World!';
     console.log(message);
 
-    let total = (num) => 5 + 5;
+    let total = (num) => num + 5;
     console.log(total(5));
 
 
